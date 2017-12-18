@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_StartGame));
             this.pb_PacmanGif = new System.Windows.Forms.PictureBox();
             this.gb_chooseMod = new System.Windows.Forms.GroupBox();
-            this.btn_StartGame = new System.Windows.Forms.Button();
-            this.rb_ManuelMod = new System.Windows.Forms.RadioButton();
             this.rb_OtomatikMod = new System.Windows.Forms.RadioButton();
+            this.rb_ManuelMod = new System.Windows.Forms.RadioButton();
+            this.btn_StartGame = new System.Windows.Forms.Button();
             this.lbl_Signature = new System.Windows.Forms.Label();
             this.btn_CloseProgram = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_PacmanGif)).BeginInit();
@@ -64,6 +64,29 @@
             this.gb_chooseMod.TabStop = false;
             this.gb_chooseMod.Text = "Please Choose a Game Mod";
             // 
+            // rb_OtomatikMod
+            // 
+            this.rb_OtomatikMod.AutoSize = true;
+            this.rb_OtomatikMod.Location = new System.Drawing.Point(35, 62);
+            this.rb_OtomatikMod.Name = "rb_OtomatikMod";
+            this.rb_OtomatikMod.Size = new System.Drawing.Size(119, 21);
+            this.rb_OtomatikMod.TabIndex = 1;
+            this.rb_OtomatikMod.Text = "Automatic Mod";
+            this.rb_OtomatikMod.UseVisualStyleBackColor = true;
+            // 
+            // rb_ManuelMod
+            // 
+            this.rb_ManuelMod.AutoSize = true;
+            this.rb_ManuelMod.Checked = true;
+            this.rb_ManuelMod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.rb_ManuelMod.Location = new System.Drawing.Point(35, 35);
+            this.rb_ManuelMod.Name = "rb_ManuelMod";
+            this.rb_ManuelMod.Size = new System.Drawing.Size(103, 21);
+            this.rb_ManuelMod.TabIndex = 0;
+            this.rb_ManuelMod.TabStop = true;
+            this.rb_ManuelMod.Text = "Manuel Mod";
+            this.rb_ManuelMod.UseVisualStyleBackColor = true;
+            // 
             // btn_StartGame
             // 
             this.btn_StartGame.BackColor = System.Drawing.Color.Green;
@@ -79,29 +102,6 @@
             this.btn_StartGame.UseVisualStyleBackColor = false;
             this.btn_StartGame.Click += new System.EventHandler(this.button1_Click);
             // 
-            // rb_ManuelMod
-            // 
-            this.rb_ManuelMod.AutoSize = true;
-            this.rb_ManuelMod.Checked = true;
-            this.rb_ManuelMod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            this.rb_ManuelMod.Location = new System.Drawing.Point(35, 35);
-            this.rb_ManuelMod.Name = "rb_ManuelMod";
-            this.rb_ManuelMod.Size = new System.Drawing.Size(103, 21);
-            this.rb_ManuelMod.TabIndex = 0;
-            this.rb_ManuelMod.TabStop = true;
-            this.rb_ManuelMod.Text = "Manuel Mod";
-            this.rb_ManuelMod.UseVisualStyleBackColor = true;
-            // 
-            // rb_OtomatikMod
-            // 
-            this.rb_OtomatikMod.AutoSize = true;
-            this.rb_OtomatikMod.Location = new System.Drawing.Point(35, 62);
-            this.rb_OtomatikMod.Name = "rb_OtomatikMod";
-            this.rb_OtomatikMod.Size = new System.Drawing.Size(119, 21);
-            this.rb_OtomatikMod.TabIndex = 1;
-            this.rb_OtomatikMod.Text = "Automatic Mod";
-            this.rb_OtomatikMod.UseVisualStyleBackColor = true;
-            // 
             // lbl_Signature
             // 
             this.lbl_Signature.AutoSize = true;
@@ -109,9 +109,9 @@
             this.lbl_Signature.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_Signature.Location = new System.Drawing.Point(216, 379);
             this.lbl_Signature.Name = "lbl_Signature";
-            this.lbl_Signature.Size = new System.Drawing.Size(136, 14);
+            this.lbl_Signature.Size = new System.Drawing.Size(95, 14);
             this.lbl_Signature.TabIndex = 3;
-            this.lbl_Signature.Text = "Designed by Hakan and Sefa";
+            this.lbl_Signature.Text = "Designed by Hakan";
             this.lbl_Signature.MouseLeave += new System.EventHandler(this.lbl_Signature_MouseLeave);
             this.lbl_Signature.MouseHover += new System.EventHandler(this.lbl_Signature_MouseHover);
             // 
